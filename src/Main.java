@@ -23,6 +23,19 @@ public class Main {
         int min = 0;
         int max =0;
 
+        // I don't understand why it doesn't work, it seems that i can't parse my array properly
+        /*
+
+        for (int i =0; i < emp.length; i++){
+            if (min < emp[i].salary){
+
+                min = emp[i].salary;
+
+            }
+        }
+
+        */
+
         if(emp[0].salary < emp[1].salary && emp[0].salary < emp[2].salary) {
             min = emp[0].salary;
         } else if (emp[1].salary < emp[0].salary && emp[1].salary < emp[2].salary) {
