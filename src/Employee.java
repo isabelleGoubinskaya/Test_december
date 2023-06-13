@@ -1,12 +1,12 @@
-public class Employee {
-     String firstName;
-     String lastName;
-     int service;
-     int salary;
-     static int count = 1;
-     int jobID;
-     String name;
-     boolean isFilled;
+class Employee {
+    String firstName;
+    String lastName;
+    int service;
+    int salary;
+    static int count = 1;
+    int jobID;
+    String name;
+    boolean isFilled;
 
     public Employee(String firstName, String lastName, int service, int salary, int jobID) {
         this.salary = salary;
@@ -38,8 +38,9 @@ public class Employee {
         return service;
     }
 
-    public void showData() {
-        System.out.println("Employee [jobID = " + jobID + ", salary = " + salary + ", name = " + lastName + ", firstName = " + firstName + ", service = " + service + "]");
+    @Override
+    public String toString() {
+        return "Employee [jobID = " + jobID + ", salary = " + salary + ", name = " + lastName + ", firstName = "
+                + firstName + ", service = " + service + "]";
     }
-
 }
